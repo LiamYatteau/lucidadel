@@ -9,6 +9,11 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+		if (!collision.CompareTag("Player"))
+        {
+            return;
+        }
+		
         if (portalObjects.Contains(collision.gameObject))
         {
             return;
@@ -24,6 +29,11 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+		if (!collision.CompareTag("Player"))
+        {
+            return;
+        }
+		
         portalObjects.Remove(collision.gameObject);
     }
 }
