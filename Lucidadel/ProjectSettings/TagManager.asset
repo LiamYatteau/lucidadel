@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Blue Portal
   - Red Portal
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
