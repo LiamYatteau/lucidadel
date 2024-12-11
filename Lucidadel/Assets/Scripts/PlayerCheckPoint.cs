@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerCheckPoint : MonoBehaviour
 {
 	
-	pulic GameObject checkpoint;
+	public GameObject checkpoint;
 	Vector2 spawnPoint;
 	
     // Start is called before the first frame update
     void Start()
     {
-      spawnpoint = gameObject.transform.position;
+      spawnPoint = gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class PlayerCheckPoint : MonoBehaviour
 	{
 		if(other.gameObject.CompareTag("Checkpoint"))
 		{
-			spawnPoint = Checkpoint.transform.position;
+			spawnPoint = checkpoint.transform.position;
 		}
 	}
 	
